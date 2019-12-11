@@ -13,7 +13,7 @@
     <main>
         <section>
             <p>En la película de 1968 ... </p>
-                <details open>
+                <details>
                   <summary>Apreta si vols saber el final xiquet.</summary>
                   <p>VES Y MIRA LA PELICULA RATA PAGA PAGA </p>
                 </details>
@@ -22,12 +22,38 @@
                 <details open>
                     <summary>Datos personales</summary>
                     <p>Nombre: <input type="text" name="nombre"></p>
+                    <p>Apellidos: <input type="text" name="Apellidos"></p>
                 </details>
 
-                <details open>
+                <details>
                     <summary>Datos profesionales</summary>
                     <p>Empresa: <input type="text" name="empresa"></p>
                 </details>
+        </section>
+        <section>
+                <p>Estas son las asignaturas.</p>
+                <details>
+                  <summary>Tira-li</summary>
+                  <ul>
+                    <li>GBD</li>
+                    <li>LMI</li>
+                    <li>PAR</li>
+                    <li>FOL</li>
+                  </ul>
+                </details>
+                <dialog id="dialog-1">
+                        <h1>HA SIDO HACKEADO</h1>
+                      
+                        <p>DAME TU DINERO O EL ORDENADOR EXPLOTARA MUAJAJAJAJA.</p>
+                      
+                        <p>
+                          <input type="button" value="Cerrar" onclick="document.getElementById('dialog-1').removeAttribute('open')">
+                        </p>
+                      </dialog>
+                      
+                      <p>
+                        <input type="button" value="Pulsa para ser rico sin esforzarte" onclick="document.getElementById('dialog-1').setAttribute('open', 'open')">
+                      </p>
         </section>
     </main>
     
